@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-weight: bold;
+	width: 0;
+	height: 0;
+}
+.container {
+	width: 100vw;
+	height: 75px;
+	background-color: #d4d7de;
+}
+.column-left {
+	float: left;
+	width: 20vw;
+	padding: 10px;
+	height: inherit;
+}
+.logo {
+	font-size: 40px;
+	margin: 15px;
+	padding: 0;
+}
+.column-center {
+	float: left;
+	width: 50vw;
+	padding: 10px;
+	height: inherit;
+}
+.cmenu {
+	margin: 15px;
+	text-decoration: none;
+}
+.column-right {
+	float: right;
+	width: 30vw;
+	padding: 10px;
+	height: inherit;
+}
+.rmenu {
+	float: right;
+	margin: 15px;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	align-content: center;
+}
+li {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 20px;
+	margin: 0px 15px;
+	padding: 0px 10px;
+}
+a {
+	color: black;
+}
+a:hover {
+	color: rgb(83, 221, 221);
+}
