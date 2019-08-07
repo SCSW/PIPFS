@@ -1,12 +1,12 @@
+import React from "react";
+import "./Home.css";
 import Header from "./Header/Header";
-import React, { Component } from "react";
+const Home = () => {
+	return (
+		<React.Fragment>
+			<Header />
+		</React.Fragment>
+	);
+};
 
-export default class Home extends Component {
-	render() {
-		return (
-			<div>
-				<Header />
-			</div>
-		);
-	}
-}
+export default Home;

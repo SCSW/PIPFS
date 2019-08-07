@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-// import Header from "./components/Header/Header";
-// import Home from "./components/Home";
+
+import Home from "./components/Home";
 import Register from "./components/Register/Register";
 import LogIn from "./components/Login/LogIn";
 
@@ -10,7 +10,8 @@ function App() {
 	return (
 		<React.Fragment>
 			<Switch>
-				<Route exact path="/" component={Register} />
+				<Route exact path="/" component={Home} />
+				<Route exact path="/Register" component={Register} />
 				<Route exact path="/Login" component={LogIn} />
 			</Switch>
 		</React.Fragment>

@@ -1,47 +1,42 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
-export default class Home extends Component {
-	render() {
-		return (
-			<React.Fragment>
-				<div className="container">
-					<div className="column-left">
-						<div className="logo">PIPFS</div>
+const Header = () => {
+	return (
+		<React.Fragment>
+			<div className="container">
+				<Link>
+					<div className="column-left" to="/">
+						PIPFS
 					</div>
-
-					<div className="column-center">
-						<nav className="cmenu">
-							<ul>
-								<li>
-									<a>Trending</a>
-								</li>
-								<li>
-									<a>Blogs</a>
-								</li>
-								<li>
-									<a>Tops</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div className="column-right">
-						<nav className="rmenu">
-							<ul>
-								<li>
-									<a href="">Log In</a>
-								</li>
-								<li>
-									<a href="">Sign Up</a>
-								</li>
-								<li>
-									<a href="">Menu</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
+				</Link>
+				<div className="column-center">
+					<Link className="a" to="/">
+						Trending
+					</Link>
+					<Link className="a" to="/">
+						News
+					</Link>
+					<Link className="a" to="/">
+						Tops
+					</Link>
 				</div>
-			</React.Fragment>
-		);
-	}
-}
+				<div className="column-right">
+					<nav className="rmenu">
+						<Link className="a" to="/LogIn">
+							LogIn
+						</Link>
+						<Link className="a" to="/Register">
+							Sign Up
+						</Link>
+						<Link className="a" to="/">
+							Menu
+						</Link>
+					</nav>
+				</div>
+			</div>
+		</React.Fragment>
+	);
+};
+export default Header;

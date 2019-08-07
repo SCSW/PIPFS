@@ -1,23 +1,9 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-body {
-	width: 0;
-	height: 0;
-	font-weight: bolder;
-	color: black;
-}
 .l-container {
 	width: 100vw;
-	height: 1000px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(L-Background.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .l-content {
