@@ -1,42 +1,44 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-
-const Header = () => {
-	return (
-		<React.Fragment>
-			<div className="container">
-				<Link>
-					<div className="column-left" to="/">
-						PIPFS
-					</div>
-				</Link>
-				<div className="column-center">
-					<Link className="a" to="/">
-						Trending
+import React, { Component } from "react";
+export class Header extends Component {
+	render() {
+		return (
+			<React.Fragment>
+				<div className="container">
+					<Link>
+						<div className="column-left" to="/">
+							PIPFS
+						</div>
 					</Link>
-					<Link className="a" to="/">
-						News
-					</Link>
-					<Link className="a" to="/">
-						Tops
-					</Link>
-				</div>
-				<div className="column-right">
-					<nav className="rmenu">
-						<Link className="a" to="/LogIn">
-							LogIn
-						</Link>
-						<Link className="a" to="/Register">
-							Sign Up
+					<div className="column-center">
+						<Link className="a" to="/">
+							Trending
 						</Link>
 						<Link className="a" to="/">
-							Menu
+							News
 						</Link>
-					</nav>
+						<Link className="a" to="/">
+							Tops
+						</Link>
+					</div>
+					<div className="column-right">
+						<nav className="rmenu">
+							<Link className="a" to="/LogIn">
+								LogIn
+							</Link>
+							<Link className="a" to="/Register">
+								Sign Up
+							</Link>
+							<Link className="a" to="/">
+								Menu
+							</Link>
+						</nav>
+					</div>
 				</div>
-			</div>
-		</React.Fragment>
-	);
-};
+			</React.Fragment>
+		);
+	}
+}
+
 export default Header;

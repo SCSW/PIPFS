@@ -1,57 +1,35 @@
-import React from "react";
 import "./App.css";
 import { Route, Switch } from "react-router-dom";
-
 import Home from "./components/Home";
 import Register from "./components/Register/Register";
 import LogIn from "./components/Login/LogIn";
+import React, { Component } from "react";
 
-function App() {
-	return (
-		<React.Fragment>
-			<Switch>
-				<Route exact path="/" component={Home} />
-				<Route exact path="/Register" component={Register} />
-				<Route exact path="/Login" component={LogIn} />
-			</Switch>
-		</React.Fragment>
-	);
+export class App extends Component {
+	render() {
+		return (
+			<React.Fragment>
+				<Switch>
+					<Route exact path="/" component={Home} />
+					<Route exact path="/Register" component={Register} />
+					<Route exact path="/Login" component={LogIn} />
+				</Switch>
+			</React.Fragment>
+		);
+	}
 }
+
 export default App;
 
-// export class App extends Component {
-// 	render() {
-// 		return (
-// 			<div className="App">
-// 				<Home />
-// 			</div>
-// 		);
-// 	}
+// function App() {
+// 	return (
+// 		<React.Fragment>
+// 			<Switch>
+// 				<Route exact path="/" component={Home} />
+// 				<Route exact path="/Register" component={Register} />
+// 				<Route exact path="/Login" component={LogIn} />
+// 			</Switch>
+// 		</React.Fragment>
+// 	);
 // }
 // export default App;
-
-// import React, { Component } from "react";
-// import { Switch, Route, NavLink, Link } from "react-router-dom";
-
-// export default class App extends Component {
-// 	render() {
-// 		return (
-// 			<div>
-// 				<nav>
-// 					<NavLink exact to="/" activeStyle={{ color: "red" }}>
-// 						Home
-// 					</NavLink>
-// 					<NavLink exact to="/about" activeStyle={{ color: "red" }}>
-// 						About
-// 					</NavLink>
-// 				</nav>
-// 				<Switch>
-// 					<Route exact path="/" render={() => <div>Home</div>} />
-// 					<Route exact path="/about" render={() => <div>About</div>} />
-// 					<Route exact path="/asdfasd" component={Componentname} />
-// 				</Switch>
-// 				<footer />
-// 			</div>
-// 		);
-// 	}
-// }
