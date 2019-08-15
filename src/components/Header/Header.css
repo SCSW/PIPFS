@@ -1,31 +1,88 @@
-.container {
-	width: 100vw;
-	height: 65px;
-	background-color: #d4d7de;
-}
-.column-left {
-	float: left;
-	width: 33.33vw;
-	font-size: 40px;
-}
-
-.column-center {
-	float: left;
-	width: 33.33vw;
-}
-
-.column-right {
-	float: right;
-	width: 33.33vw;
-}
-.rmenu {
-	float: right;
-	margin-right: 15px;
-}
-.a {
-	font-size: 20px;
+.wrapper {
+	font-weight: bolder;
+	display: grid;
+	grid-template-columns: repeat(3, 33.33%);
+	background-color: rgba(0, 0, 255, 0.12);
 	text-transform: uppercase;
+	cursor: pointer;
+	grid-template-rows: 1fr;
 }
-.a:hover {
-	color: rgb(83, 221, 221);
+.logo {
+	font-size: 2rem;
+	padding: 5px;
+	margin: 8px;
+}
+
+.n-search {
+	font-size: 20px;
+	padding: 10px;
+	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr 1rem);
+}
+.n-search-box {
+	padding: 15px;
+	height: 2rem;
+	width: 25rem;
+	border-radius: 5px;
+	border: none;
+}
+
+.search-icon {
+	font-weight: 900;
+	padding: 1px 5px;
+}
+.h-ham {
+	display: none;
+}
+.menu {
+	padding: 10px;
+	margin: 12px;
+	font-size: 17px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.menu-item {
+	text-align: center;
+	text-decoration: none;
+	color: #222222;
+}
+.menu-item:hover {
+	color: rgb(22, 209, 184);
+}
+@media only screen and (max-width: 1450px) {
+	.menu {
+		display: none;
+	}
+	.h-ham {
+		display: block;
+		text-align: end;
+		padding: 10px;
+		margin: 7px;
+		color: #222222;
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.n-search-box {
+		width: 15rem;
+	}
+	.logo {
+		font-size: 1.5rem;
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.n-search-box {
+		width: 8.5rem;
+	}
+	.logo {
+		font-size: 1.8rem;
+		padding: 8px;
+	}
+	.n-search {
+		font-size: 20px;
+		padding: 10px 0px 20px;
+	}
 }

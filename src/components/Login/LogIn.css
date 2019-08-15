@@ -1,34 +1,43 @@
+.l-background {
+	width: 100%;
+	height: 100vh;
+	background-image: url(L-Background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* position: absolute; */
+}
 .l-container {
-	width: 100vw;
+	width: 100vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
 .l-content {
 	border-radius: 20px;
 	background: #f6f5f7;
-	width: 25em;
-	height: 35rem;
+	width: 23em;
+	height: 32rem;
 }
-h1 {
+.l-content h1 {
 	margin: 20px;
 	padding: 20px;
 }
 .l-form {
 	background-color: #ddd;
 	border: none;
+	border-radius: 5px;
 	padding: 12px 15px;
 	margin: 10px 5px;
 	width: 90%;
 	border: 1px solid #eee;
 }
-a {
-	color: rgb(31, 127, 253);
-	font-size: 14px;
+.forget {
+	color: rgb(77, 152, 238);
+	font-size: 15px;
 	float: left;
-	margin: 20px;
+	margin: 20px 25px;
+	cursor: pointer;
 }
 .l-button {
 	cursor: pointer;

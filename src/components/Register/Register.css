@@ -1,11 +1,5 @@
-body {
-	width: 0;
-	height: 0;
-	font-weight: bolder;
-	color: black;
-}
 .r-container {
-	width: 100vw;
+	width: 100vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -19,16 +13,18 @@ body {
 	height: 35rem;
 	border: 1px solid #eee;
 }
-h1 {
+.create {
 	padding: 25px;
 }
-h5 {
-	padding-top: 20px;
+.already-acc {
+	padding: 10px;
 	font-size: 15px;
 }
 .link {
-	padding-bottom: 20px;
+	padding: 10px 20px;
 	margin-bottom: 10px;
+	color: rgb(77, 152, 238);
+	text-decoration: none;
 }
 .r-form {
 	background-color: #ddd;
@@ -37,16 +33,13 @@ h5 {
 	margin: 10px 5px;
 	width: 90%;
 	border: 1px solid #eee;
+	border-radius: 5px;
 }
 .r-re-box {
 	display: flex;
 	justify-content: center;
 }
 
-.r-re-box a {
-	color: rgb(31, 127, 253);
-	font-size: 14px;
-}
 .r-button {
 	cursor: pointer;
 	border-radius: 20px;

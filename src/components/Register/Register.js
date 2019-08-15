@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 import("./Register.css");
 
-export class Register extends Component {
+export default class Register extends React.Component {
 	constructor() {
 		super();
 		this.state = {
@@ -16,9 +16,9 @@ export class Register extends Component {
 	register1 = async () => {
 		axios
 			.post("http://localhost:3001/register", {
-				username: this.state.username,
 				email: this.state.email,
-				password: this.state.password
+				password: this.state.password,
+				username: this.state.username
 			})
 			.then((res, err) => {
 				console.log(res);
@@ -31,11 +31,11 @@ export class Register extends Component {
 				<div className="r-container">
 					<center>
 						<div className="r-content">
-							<h1>Create Account</h1>
+							<h1 className="create">Create Account</h1>
 							<input
 								className="r-form"
 								type="username"
-								placeholder="Username"
+								placeholder="username"
 								onChange={e =>
 									this.setState({ username: e.target.value })
 								}
@@ -43,13 +43,13 @@ export class Register extends Component {
 							<input
 								className="r-form"
 								type="email"
-								placeholder="Email"
+								placeholder="email"
 								onChange={e => this.setState({ email: e.target.value })}
 							/>
 							<input
 								className="r-form"
 								type="password"
-								placeholder="Password"
+								placeholder="password"
 								onChange={e =>
 									this.setState({ password: e.target.value })
 								}
@@ -61,7 +61,9 @@ export class Register extends Component {
 								Create
 							</button>
 							<div className="r-re-box">
-								<h5>Already have an account?</h5>
+								<h5 className="already-acc">
+									Already have an account ?
+								</h5>
 								<Link className="link" to="/LogIn">
 									Log In
 								</Link>
@@ -73,5 +75,3 @@ export class Register extends Component {
 		);
 	}
 }
-
-export default Register;
