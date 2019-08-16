@@ -33,7 +33,7 @@ export class Header extends Component {
 							<NavLink className="menu-item" to="/">
 								contact
 							</NavLink>
-							<NavLink className="menu-item" to="/">
+							<NavLink className="menu-item" to="/About">
 								about us
 							</NavLink>
 							<NavLink className="menu-item" to="/LogIn">
