@@ -6,6 +6,18 @@
 	background-size: cover;
 	/* position: absolute; */
 }
+.media {
+	text-align: center;
+	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(3, 4rem);
+}
+.media-icon {
+	font-size: 30px;
+}
+.media-icon:hover {
+	color: orange;
+}
 .l-container {
 	width: 100vh;
 	position: absolute;
@@ -39,9 +51,11 @@
 	margin: 20px 25px;
 	cursor: pointer;
 }
+
 .l-button {
 	cursor: pointer;
 	border-radius: 20px;
+
 	border: 1px solid #ff4b2b;
 	background-color: #ff4b2b;
 	color: #ffffff;
@@ -53,6 +67,7 @@
 	transition: transform 80ms ease-in;
 	margin: 20px;
 }
+
 button:active {
 	transform: scale(0.95);
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./LogIn.css";
 import axios from "axios";
 
@@ -28,6 +29,17 @@ export default class login extends React.Component {
 					<center>
 						<div className="l-content">
 							<h1 className="l-welcome">Welcome to the Community</h1>
+							<div className="media">
+								<NavLink className="media-icon ">
+									<i class="fab fa-google-plus-square" onClick="" />
+								</NavLink>
+								<NavLink className="media-icon ">
+									<i class="fab fa-facebook" onClick="" />
+								</NavLink>
+								<NavLink className="media-icon ">
+									<i class="fab fa-github-square" onClick="" />
+								</NavLink>
+							</div>
 							<input
 								className="l-form"
 								type="email"
@@ -42,7 +54,9 @@ export default class login extends React.Component {
 									this.setState({ password: e.target.value })
 								}
 							/>
-							<h3 className="forget">Forget your password ?</h3>
+							<div className="forget">
+								<h3>Forget your password ?</h3>
+							</div>
 							<button className="l-button" onClick={e => this.login1()}>
 								Sign In
 							</button>

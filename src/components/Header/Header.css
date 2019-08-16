@@ -5,7 +5,7 @@
 	background-color: rgba(0, 0, 255, 0.12);
 	text-transform: uppercase;
 	cursor: pointer;
-	grid-template-rows: 1fr;
+	grid-template-rows: minmax(3rem, auto);
 }
 .logo {
 	font-size: 2rem;
@@ -52,6 +52,10 @@
 	color: rgb(22, 209, 184);
 }
 @media only screen and (max-width: 1450px) {
+	.h-menu {
+		display: grid;
+		grid-template-rows: 1fr;
+	}
 	.menu {
 		display: none;
 	}
@@ -59,7 +63,7 @@
 		display: block;
 		text-align: end;
 		padding: 10px;
-		margin: 7px;
+		margin: 10px;
 		color: #222222;
 		font-size: 20px;
 	}
@@ -86,3 +90,32 @@
 		padding: 10px 0px 20px;
 	}
 }
+/* let Menu = () => {
+			return (
+				<div className="h-menu">
+					<div className="menu">
+						<NavLink className="menu-item" to="/">
+							Home
+						</NavLink>
+						<NavLink className="menu-item" to="/">
+							contact
+						</NavLink>
+						<NavLink className="menu-item" to="/">
+							about us
+						</NavLink>
+						<NavLink className="menu-item" to="/LogIn">
+							log in
+						</NavLink>
+					</div>
+				</div>
+			);
+		}; */
+/* constructor() {
+		super();
+		this.state = {
+			open: false
+		};
+	}
+	toggleMenu = () => {
+		this.setState({ open: !this.state.open });
+	}; */
