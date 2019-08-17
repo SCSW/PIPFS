@@ -1,5 +1,5 @@
 .r-container {
-	width: 100vh;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -9,22 +9,12 @@
 .r-content {
 	border-radius: 20px;
 	background: #f6f5f7;
-	width: 25em;
-	height: 35rem;
+	width: 23em;
+	height: 34rem;
 	border: 1px solid #eee;
 }
 .create {
 	padding: 25px;
-}
-.already-acc {
-	padding: 10px;
-	font-size: 15px;
-}
-.link {
-	padding: 10px 20px;
-	margin-bottom: 10px;
-	color: rgb(77, 152, 238);
-	text-decoration: none;
 }
 .r-form {
 	background-color: #ddd;
@@ -34,17 +24,30 @@
 	width: 90%;
 	border: 1px solid #eee;
 	border-radius: 5px;
+}.already-acc{
+	font-weight: normal;
+	font-size: 16px;
+	display: grid;
+
+}
+.r-login {
+	color: black;
+	text-align: start;
+	text-decoration: none;
+}
+.r-login:hover{
+	color:rgb(56, 155, 247);
 }
 .r-re-box {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 70% 30%;
 }
 
 .r-button {
 	cursor: pointer;
 	border-radius: 20px;
-	border: 1px solid #a02bff;
-	background-color: #a02bff;
+	border: 1px solid #ff4b2b;
+	background-color: #ff4b2b;
 	color: #ffffff;
 	font-size: 12px;
 	font-weight: bold;

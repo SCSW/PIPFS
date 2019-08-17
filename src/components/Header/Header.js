@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Logo from "./logos.png";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 
@@ -7,8 +8,8 @@ export class Header extends Component {
 		return (
 			<React.Fragment>
 				<div className="wrapper">
-					<center>
-						<div className="logo">PIPFS</div>
+					<center className="logo">
+						<img className="h-logo" src={Logo} alt="" />
 					</center>
 					<center>
 						<div className="n-search">
@@ -23,23 +24,43 @@ export class Header extends Component {
 						</div>
 					</center>
 					<div className="h-menu">
-						<NavLink className="h-ham">
-							<i className="fas fa-bars" />
-						</NavLink>
 						<div className="menu">
-							<NavLink className="menu-item" to="/">
-								Home
+							<NavLink to="/About" className="menu-item">
+								home
 							</NavLink>
-							<NavLink className="menu-item" to="/">
+							<NavLink to="/About" className="menu-item">
 								contact
 							</NavLink>
-							<NavLink className="menu-item" to="/About">
+							<NavLink to="/About" className="menu-item">
 								about us
 							</NavLink>
-							<NavLink className="menu-item" to="/LogIn">
+							<NavLink to="/LogIn" className="menu-item">
 								log in
 							</NavLink>
+							<NavLink to="/Register" className="menu-item">
+								sign up
+							</NavLink>
 						</div>
+
+						<div className="h-ham">
+							<i className="fas fa-bars" />
+						</div>
+					</div>
+				</div>
+				<div className="hide-right-menu">
+					<div className="h-right-menu">
+						<NavLink className="menu-item" to="/">
+							home
+						</NavLink>
+						<NavLink className="menu-item" to="/">
+							contact
+						</NavLink>
+						<NavLink className="menu-item" to="/About">
+							about us
+						</NavLink>
+						<NavLink to="/LogIn" className="menu-item">
+							log in
+						</NavLink>
 					</div>
 				</div>
 			</React.Fragment>

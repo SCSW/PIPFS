@@ -28,23 +28,36 @@ export default class login extends React.Component {
 				<div className="l-container">
 					<center>
 						<div className="l-content">
-							<h1 className="l-welcome">Welcome to the Community</h1>
+							<h1 className="l-welcome">
+								Welcome to the Community
+							</h1>
 							<div className="media">
 								<NavLink className="media-icon ">
-									<i class="fab fa-google-plus-square" onClick="" />
+									<i
+										class="fab fa-google-plus-square"
+										onClick=""
+									/>
 								</NavLink>
 								<NavLink className="media-icon ">
 									<i class="fab fa-facebook" onClick="" />
 								</NavLink>
 								<NavLink className="media-icon ">
-									<i class="fab fa-github-square" onClick="" />
+									<i
+										class="fab fa-github-square"
+										onClick=""
+									/>
+								</NavLink>
+								<NavLink className="media-icon ">
+									<i class="fab fa-medium" onClick="" />
 								</NavLink>
 							</div>
 							<input
 								className="l-form"
 								type="email"
 								placeholder="Email"
-								onChange={e => this.setState({ email: e.target.value })}
+								onChange={e =>
+									this.setState({ email: e.target.value })
+								}
 							/>
 							<input
 								className="l-form"
@@ -57,7 +70,9 @@ export default class login extends React.Component {
 							<div className="forget">
 								<h3>Forget your password ?</h3>
 							</div>
-							<button className="l-button" onClick={e => this.login1()}>
+							<button
+								className="l-button"
+								onClick={e => this.login1()}>
 								Sign In
 							</button>
 						</div>

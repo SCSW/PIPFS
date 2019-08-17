@@ -44,7 +44,9 @@ export default class Register extends React.Component {
 								className="r-form"
 								type="email"
 								placeholder="email"
-								onChange={e => this.setState({ email: e.target.value })}
+								onChange={e =>
+									this.setState({ email: e.target.value })
+								}
 							/>
 							<input
 								className="r-form"
@@ -56,15 +58,14 @@ export default class Register extends React.Component {
 							/>
 							<button
 								className="r-button"
-								onClick={e => this.register1()}
-							>
+								onClick={e => this.register1()}>
 								Create
 							</button>
 							<div className="r-re-box">
 								<h5 className="already-acc">
 									Already have an account ?
 								</h5>
-								<Link className="link" to="/LogIn">
+								<Link to="/LogIn" className="r-login">
 									Log In
 								</Link>
 							</div>

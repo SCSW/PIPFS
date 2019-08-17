@@ -1,18 +1,18 @@
 .wrapper {
-	font-weight: bolder;
 	display: grid;
 	grid-template-columns: repeat(3, 33.33%);
-	background-color: rgba(0, 0, 255, 0.12);
+	background-color: rgba(18, 90, 148, 0.8);
 	text-transform: uppercase;
 	cursor: pointer;
 	grid-template-rows: minmax(3rem, auto);
 }
-.logo {
-	font-size: 2rem;
-	padding: 5px;
-	margin: 8px;
+.h-logo{
+	height: 65px;
+	width: 65px;
 }
-
+.logo:active {
+	transform:scale(0.98);
+}
 .n-search {
 	font-size: 20px;
 	padding: 10px;
@@ -21,37 +21,67 @@
 	grid-template-columns: repeat(2, 1fr 1rem);
 }
 .n-search-box {
-	padding: 15px;
-	height: 2rem;
+	padding: 8px;
+	height: auto;
 	width: 25rem;
 	border-radius: 5px;
 	border: none;
 }
-
 .search-icon {
-	font-weight: 900;
 	padding: 1px 5px;
 }
-.h-ham {
-	display: none;
+.search-icon:active {
+	transform: scale(0.95);
+}
+.search-icon:focus {
+	outline: none;
+}
+.h-ham{
+ display: none;
 }
 .menu {
 	padding: 10px;
 	margin: 12px;
-	font-size: 17px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(5, 1fr);
 }
-
 .menu-item {
 	text-align: center;
 	text-decoration: none;
+	font-size: 17px;
 	color: #222222;
+	text-transform: uppercase;
+	transition:0.3s;
 }
 .menu-item:hover {
-	color: rgb(22, 209, 184);
+	color: rgb(57, 185, 168);
+}
+.hide-right-menu{
+	/* display: none; */
+}
+.h-right-menu{
+	display: grid;
+	grid-auto-rows: 30px;
+	position: fixed;
+	z-index: 1;
+	top:0;	
+ 	right:0;
+	overflow-x: hidden;
+	transition: 0.4s;
+	width:0;
+	padding-top: 60px;
+	height: 100vh;
+	background-color: rgba(18, 90, 148);
 }
 @media only screen and (max-width: 1450px) {
+	.h-right-menu{
+		width: 100%;
+	}
+	.logo{
+		width: 30px;
+		height: 30px;
+		margin-left:40px;
+	}
 	.h-menu {
 		display: grid;
 		grid-template-rows: 1fr;
@@ -69,21 +99,22 @@
 	}
 }
 @media only screen and (max-width: 800px) {
+	.logo{
+		width: 30px;
+		height: 30px;
+		margin-left:30px;
+	}
 	.n-search-box {
 		width: 15rem;
-	}
-	.logo {
-		font-size: 1.5rem;
-		padding: 15px;
-	}
-}
+	}}
 @media only screen and (max-width: 500px) {
 	.n-search-box {
 		width: 8.5rem;
 	}
-	.logo {
-		font-size: 1.8rem;
-		padding: 8px;
+	.logo{
+		width: 30px;
+		height: 30px;
+		margin-left:20px;
 	}
 	.n-search {
 		font-size: 20px;

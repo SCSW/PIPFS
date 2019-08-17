@@ -9,7 +9,7 @@ import Footer from "./Footer/Footer";
 const Home = () => {
 	return (
 		<React.Fragment>
-			<AnimateBar />
+			{/* <AnimateBar /> */}
 			<Header />
 			{/* <BGImage /> */}
 			<Content />
