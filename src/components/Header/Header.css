@@ -1,125 +1,165 @@
 .wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, 33.33%);
-	background-color: rgba(18, 90, 148, 0.8);
-	text-transform: uppercase;
-	cursor: pointer;
-	grid-template-rows: minmax(3rem, auto);
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  background-color: #151618;
+  text-transform: uppercase;
+  cursor: pointer;
+  grid-template-rows: minmax(3rem, auto);
 }
-.h-logo{
-	height: 65px;
-	width: 65px;
+
+.h-logo {
+  height: 65px;
+  width: 65px;
 }
 .logo:active {
-	transform:scale(0.98);
+  transform: scale(0.98);
 }
+
 .n-search {
-	font-size: 20px;
-	padding: 10px;
-	margin: 8px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr 1rem);
+  font-size: 20px;
+  padding: 10px;
+  margin: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 1rem);
 }
 .n-search-box {
-	padding: 8px;
-	height: auto;
-	width: 25rem;
-	border-radius: 5px;
-	border: none;
+  padding: 8px;
+  height: auto;
+  width: 25rem;
+  border-radius: 5px;
+  border: none;
 }
 .search-icon {
-	padding: 1px 5px;
+  color: #fff;
+  padding: 1px 5px;
 }
 .search-icon:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 .search-icon:focus {
-	outline: none;
+  outline: none;
 }
-.h-ham{
- display: none;
+
+.h-ham {
+  color: #fff;
+  display: none;
 }
+.fa-bars:active {
+  transform: scale(0.95);
+}
+.fa-bars:focus {
+  outline: none;
+}
+
 .menu {
-	padding: 10px;
-	margin: 12px;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  margin: 12px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .menu-item {
-	text-align: center;
-	text-decoration: none;
-	font-size: 17px;
-	color: #222222;
-	text-transform: uppercase;
-	transition:0.3s;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-weight: bold;
 }
 .menu-item:hover {
-	color: rgb(57, 185, 168);
+  color: rgb(57, 185, 168);
+  background-color: #232324;
+  border-radius: 3px;
 }
-.hide-right-menu{
-	/* display: none; */
+
+.hide-right-menu {
+  /* display: none; */
 }
-.h-right-menu{
-	display: grid;
-	grid-auto-rows: 30px;
-	position: fixed;
-	z-index: 1;
-	top:0;	
- 	right:0;
-	overflow-x: hidden;
-	transition: 0.4s;
-	width:0;
-	padding-top: 60px;
-	height: 100vh;
-	background-color: rgba(18, 90, 148);
+.h-close {
+  cursor: pointer;
+  text-align: end;
+  justify-content: end;
+  font-size: 20px;
+  color: #fff;
 }
+.fa-times:hover {
+  background-color: #232324;
+  border-radius: 3px;
+}
+.fa-times:active {
+  transform: scale(0.95);
+}
+.fa-times:focus {
+  outline: none;
+}
+.fa-times:before {
+  padding: 10px;
+}
+
+.h-right-menu {
+  display: grid;
+  grid-auto-rows: 30px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.4s;
+  width: 0;
+  height: 100vh;
+  background-color: #151618;
+}
+
 @media only screen and (max-width: 1450px) {
-	.h-right-menu{
-		width: 100%;
-	}
-	.logo{
-		width: 30px;
-		height: 30px;
-		margin-left:40px;
-	}
-	.h-menu {
-		display: grid;
-		grid-template-rows: 1fr;
-	}
-	.menu {
-		display: none;
-	}
-	.h-ham {
-		display: block;
-		text-align: end;
-		padding: 10px;
-		margin: 10px;
-		color: #222222;
-		font-size: 20px;
-	}
+  .h-right-menu {
+    width: 100%;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+  }
+  .h-menu {
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .menu {
+    display: none;
+  }
+  .h-ham {
+    display: block;
+    text-align: end;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
 }
+
 @media only screen and (max-width: 800px) {
-	.logo{
-		width: 30px;
-		height: 30px;
-		margin-left:30px;
-	}
-	.n-search-box {
-		width: 15rem;
-	}}
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+  .n-search-box {
+    width: 15rem;
+  }
+}
+
 @media only screen and (max-width: 500px) {
-	.n-search-box {
-		width: 8.5rem;
-	}
-	.logo{
-		width: 30px;
-		height: 30px;
-		margin-left:20px;
-	}
-	.n-search {
-		font-size: 20px;
-		padding: 10px 0px 20px;
-	}
+  .n-search-box {
+    width: 8.5rem;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+  .n-search {
+    font-size: 20px;
+    padding: 10px 0px 20px;
+  }
 }
 /* let Menu = () => {
 			return (

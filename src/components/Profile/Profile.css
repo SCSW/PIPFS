@@ -1,0 +1,28 @@
+.profile {
+  width: 100%;
+  height: 100vh;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+.pro-setting {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: aquamarine;
+}
+.pro-main-set {
+  background-color: blueviolet;
+}
+.pro-list-set {
+  background-color: brown;
+}
+.profile-info {
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr 1fr;
+}
+.profile-info {
+  background-color: grey;
+}
+.profile-cov-pic {
+  background-color: #3333;
+}

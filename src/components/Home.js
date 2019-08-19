@@ -7,15 +7,15 @@ import BGImage from "./BGImage/BGImage";
 import Footer from "./Footer/Footer";
 
 const Home = () => {
-	return (
-		<React.Fragment>
-			{/* <AnimateBar /> */}
-			<Header />
-			{/* <BGImage /> */}
-			<Content />
-			<Footer />
-		</React.Fragment>
-	);
+  return (
+    <React.Fragment>
+      <AnimateBar />
+      <Header />
+      <BGImage />
+      <Content />
+      <Footer />
+    </React.Fragment>
+  );
 };
 
 export default Home;
