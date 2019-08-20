@@ -1,19 +1,37 @@
 import React, { Component } from "react";
+import Header from "../Header/Header";
+import Profile_List_Setting from "./Profile_List_Setting/Profile_List_Setting";
+import Profile_Info_Setting from "./Profile_Info_Setting/Profile_Info_Setting";
 import "./Profile.css";
 export class Profile extends Component {
   render() {
+    // const ProfileTest = title => {
+    //   return (
+    //     <div className="profile-info">
+    //       <div className="pis-context">
+    //         <h3 className="pis-tittle">{title}</h3>
+    //       </div>
+    //     </div>
+    //   );
+    // };
+
     return (
       <React.Fragment>
-        <div className="profile">
-          <div className="pro-setting">
-            <div className="pro-main-set" />
-            <div className="pro-list-set">
-              <div className="list-set" />
+        <div className="divided-profile">
+          <Header />
+          <div className="profile">
+            <Profile_List_Setting />
+            <div className="main-pis">
+              <div className="pis-header">
+                <h2>Account Setting</h2>
+                <h5>
+                  Basic info, like your name and photo, that you use on Google
+                  services
+                </h5>
+              </div>
+              <Profile_Info_Setting />
+              {/* {ProfileTest("Personal Information")} */}
             </div>
-          </div>
-          <div className="profile-info">
-            <div className="profile-cov-pic" />
-            <div className="profile-contents" />
           </div>
         </div>
       </React.Fragment>
