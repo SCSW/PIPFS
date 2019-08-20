@@ -49,7 +49,7 @@ export class Header extends Component {
         <div className="hide-right-menu">
           <div className="h-right-menu">
             <div className="h-close">
-              <i class="fas fa-times" />
+              <i className="fas fa-times" />
             </div>
             <NavLink className="menu-item" to="/">
               home

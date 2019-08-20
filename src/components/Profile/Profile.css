@@ -14,7 +14,7 @@
 }
 .main-pis {
   display: grid;
-  grid-auto-rows: auto 1fr 1fr 1fr;
+  grid-auto-rows: 10% 50% 30% 50%;
   margin: 20px 200px;
   padding: 0px 48px;
 }
@@ -22,4 +22,7 @@
   padding: 10px;
   text-align: center;
   display: grid;
+}
+.pish-more-info {
+  color: #444444;
 }

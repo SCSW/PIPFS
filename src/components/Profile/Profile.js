@@ -24,13 +24,12 @@ export class Profile extends Component {
             <div className="main-pis">
               <div className="pis-header">
                 <h2>Account Setting</h2>
-                <h5>
+                <h5 className="pish-more-info">
                   Basic info, like your name and photo, that you use on Google
                   services
                 </h5>
               </div>
               <Profile_Info_Setting />
-              {/* {ProfileTest("Personal Information")} */}
             </div>
           </div>
         </div>

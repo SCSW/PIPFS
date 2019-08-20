@@ -1,13 +1,28 @@
 .profile-info {
   background-color: #fff;
   display: grid;
-  grid-template-rows: repeat(5, 1fr);
   padding: 20px;
   margin: 10px 0px;
   border-radius: 5px;
   border: 1px solid rgb(196, 190, 190);
 }
+.pis-context {
+  display: grid;
+  padding: 10px;
+}
 .pis-list {
   display: grid;
   grid-template-columns: 25% 75%;
+}
+.pisl-left {
+  padding: 10px;
+}
+.pisl-right {
+  padding: 10px;
+}
+
+.learn-more {
+  padding-left: 10px;
+  text-decoration: none;
+  color: rgb(77, 145, 248);
 }
