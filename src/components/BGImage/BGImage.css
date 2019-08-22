@@ -30,3 +30,8 @@
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   margin-top: -5rem;
 }
+@media only screen and (max-width: 1450px) {
+  .bg-text {
+    font-size: 2rem;
+  }
+}

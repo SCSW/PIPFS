@@ -57,6 +57,18 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
+.menu-item2 {
+  display: none;
+}
+.menu-item1 {
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-weight: bold;
+}
 .menu-item {
   text-align: center;
   text-decoration: none;
@@ -67,6 +79,11 @@
   font-weight: bold;
 }
 .menu-item:hover {
+  color: rgb(57, 185, 168);
+  background-color: #232324;
+  border-radius: 3px;
+}
+.menu-item1:hover {
   color: rgb(57, 185, 168);
   background-color: #232324;
   border-radius: 3px;
@@ -111,6 +128,14 @@
 }
 
 @media only screen and (max-width: 1450px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+  .n-search {
+    font-size: 20px;
+    padding: 10px 0px 10px 55px;
+  }
   .h-right-menu {
     width: 100%;
   }
@@ -137,19 +162,27 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+  }
+  .n-search {
+    font-size: 20px;
+    padding: 10px 0px 10px 30px;
+  }
   .logo {
     width: 30px;
     height: 30px;
     margin-left: 30px;
   }
   .n-search-box {
-    width: 15rem;
+    width: 17rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 520px) {
   .n-search-box {
-    width: 8.5rem;
+    width: 11.5rem;
   }
   .logo {
     width: 30px;

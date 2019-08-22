@@ -9,7 +9,9 @@ export class Header extends Component {
       <React.Fragment>
         <div className="wrapper">
           <center className="logo">
-            <img className="h-logo" src={Logo} alt="logo" />
+            <NavLink to="/">
+              <img className="h-logo" src={Logo} alt="logo" />
+            </NavLink>
           </center>
           <center>
             <div className="n-search">
@@ -25,20 +27,23 @@ export class Header extends Component {
           </center>
           <div className="h-menu">
             <div className="menu">
-              <NavLink to="/About" className="menu-item">
+              <NavLink to="/" className="menu-item">
                 home
               </NavLink>
-              <NavLink to="/Profile" className="menu-item">
-                profile
+              <NavLink to="/Contact" className="menu-item">
+                contact
               </NavLink>
               <NavLink to="/About" className="menu-item">
                 about us
               </NavLink>
-              <NavLink to="/LogIn" className="menu-item">
+              <NavLink to="/LogIn" className="menu-item1">
                 log in
               </NavLink>
-              <NavLink to="/Register" className="menu-item">
+              <NavLink to="/Register" className="menu-item1">
                 sign up
+              </NavLink>
+              <NavLink to="/Profile" className="menu-item2">
+                Profile
               </NavLink>
             </div>
             <div className="h-ham">

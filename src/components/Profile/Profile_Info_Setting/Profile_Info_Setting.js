@@ -30,19 +30,31 @@ export class Profile_Info_Setting extends Component {
           </div>
           <div className="pis-list">
             <div className="pisl-left">Name</div>
-            <div className="pisl-right" />
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
           <div className="pis-list">
             <div className="pisl-left">Date of Birth</div>
-            <div className="pisl-right" />
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
           <div className="pis-list">
             <div className="pisl-left">Gender</div>
-            <div className="pisl-right" />
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
           <div className="pis-list">
             <div className="pisl-left">Password</div>
-            <div className="pisl-right" />
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
         </div>
         <div className="profile-info">
@@ -54,11 +66,24 @@ export class Profile_Info_Setting extends Component {
           </div>
           <div className="pis-list">
             <div className="pisl-left">Email</div>
-            <div className="pisl-right" />
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
           <div className="pis-list">
-            <div className="pisl-left">Date of Birth</div>
-            <div className="pisl-right" />
+            <div className="pisl-left">Phone</div>
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
+          </div>
+          <div className="pis-list">
+            <div className="pisl-left">Recovery Email</div>
+            <div className="pisl-right">
+              <div className="pislr-1">love of gods</div>
+              <div className="pislr-2">></div>
+            </div>
           </div>
         </div>
       </React.Fragment>

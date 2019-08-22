@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
+import AnimateBar from "../AnimateBar/AnimateBar";
 import Profile_List_Setting from "./Profile_List_Setting/Profile_List_Setting";
 import Profile_Info_Setting from "./Profile_Info_Setting/Profile_Info_Setting";
 import "./Profile.css";

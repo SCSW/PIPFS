@@ -1,26 +1,42 @@
 .profile-info {
   background-color: #fff;
   display: grid;
-  padding: 20px;
-  margin: 10px 0px;
+  padding: 20px 0px;
+  margin: 20px 0px;
   border-radius: 5px;
   border: 1px solid rgb(196, 190, 190);
 }
 .pis-context {
   display: grid;
-  padding: 10px;
+  padding: 10px 20px;
+}
+.pis-tittle {
+  margin: 5px 0px;
 }
 .pis-list {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% auto;
+  cursor: pointer;
+}
+.pis-list:hover {
+  background-color: rgba(161, 162, 163, 0.096);
 }
 .pisl-left {
-  padding: 10px;
+  padding: 10px 20px;
 }
 .pisl-right {
-  padding: 10px;
+  padding: 10px 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 95% 5%;
 }
-
+.pislr-1 {
+  text-align: center;
+}
+.pislr-2 {
+  font-size: 20px;
+  font-weight: bold;
+}
 .learn-more {
   padding-left: 10px;
   text-decoration: none;
