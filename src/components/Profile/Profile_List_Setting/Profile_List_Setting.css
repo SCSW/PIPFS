@@ -1,7 +1,7 @@
 .pro-list-setting {
   display: grid;
   height: 700px;
-  margin: 30px 0px;
+  margin: 20px 0px;
   background-color: #fff;
   grid-template-rows: repeat(3, 1fr);
 }
@@ -82,21 +82,53 @@
 
 .pro-list-setting2 {
   width: 100%;
+  cursor: pointer;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   text-align: center;
   font-weight: bold;
 }
+.list-setting-general2:hover {
+  background-color: rgba(161, 162, 163, 0.096);
+  border-top: 3px solid rgb(70, 137, 245);
+  transition: 0.3s;
+}
+
+.list-security2:hover {
+  background-color: rgba(161, 162, 163, 0.096);
+  border-top: 3px solid rgb(70, 137, 245);
+  transition: 0.3s;
+}
+.list-payment2:hover {
+  background-color: rgba(161, 162, 163, 0.096);
+  border-top: 3px solid rgb(70, 137, 245);
+  transition: 0.3s;
+}
 @media only screen and (max-width: 1400px) {
+  .lsg-tittle {
+    padding: 15px;
+  }
+  .lsgsl {
+    padding-left: 5px;
+  }
+  .lssl {
+    padding-left: 5px;
+  }
+  .lpsl {
+    padding-left: 5px;
+  }
   .lsg-list {
     display: grid;
-    grid-template-rows: repeat(4, 3rem);
+    padding: 0px 15px;
+    grid-template-rows: repeat(3, 3rem);
   }
   .ls-list {
+    padding: 0px 15px;
     display: grid;
     grid-template-rows: repeat(3, 3rem);
   }
   .lp-list {
+    padding: 0px 15px;
     display: grid;
     grid-template-rows: repeat(3, 3rem);
   }

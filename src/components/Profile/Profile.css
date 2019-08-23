@@ -5,9 +5,6 @@
   grid-template-rows: auto auto 1fr;
 }
 
-.hide-right-menu {
-  display: none;
-}
 .profile {
   background-color: #fff;
   display: grid;
@@ -30,22 +27,25 @@
 }
 .pro-list-setting-hide {
   display: none;
-  display: hidden;
 }
+
 @media only screen and (max-width: 1450px) {
   .main-pis {
-    margin: 10px 10px 10px 40px;
+    margin: 10px;
+    padding: 10px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  .profile {
+    margin: 0;
+  }
   .divided-profile {
     height: 100%;
   }
   .profile {
     display: grid;
     grid-template-columns: none;
-
-    margin: 10px 50px;
+    margin: 0;
   }
   .pro-list-setting {
     display: none;
@@ -53,13 +53,14 @@
 
   .pro-list-setting-hide {
     line-height: 50px;
-    height: 50px;
-    display: initial;
-    visibility: visible;
+    display: block;
   }
 }
 @media only screen and (max-width: 460px) {
   .profile {
     margin: 0;
+  }
+  .pro-list-setting2 {
+    font-size: 13px;
   }
 }

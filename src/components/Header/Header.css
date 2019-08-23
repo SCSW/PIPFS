@@ -90,7 +90,7 @@
 }
 
 .hide-right-menu {
-  /* display: none; */
+  display: none;
 }
 .h-close {
   cursor: pointer;
@@ -182,7 +182,7 @@
 
 @media only screen and (max-width: 520px) {
   .n-search-box {
-    width: 11.5rem;
+    width: 10.5rem;
   }
   .logo {
     width: 30px;
