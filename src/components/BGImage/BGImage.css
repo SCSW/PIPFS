@@ -6,6 +6,15 @@
   grid-template-rows: max-content 1fr;
   grid-template-columns: 1fr max-content;
 }
+.crossbg {
+  margin: 3px 5px;
+  font-size: 23px;
+  text-align: end;
+  cursor: pointer;
+}
+.fa-window-close:active {
+  transform: scale(0.95);
+}
 
 .bg-image {
   width: inherit;

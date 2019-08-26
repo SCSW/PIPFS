@@ -6,6 +6,9 @@ export class BGImage extends Component {
     return (
       <React.Fragment>
         <div className="bg">
+          <div className="crossbg">
+            <i class="far fa-window-close"></i>
+          </div>
           <div className="bg-image" />
           <h1 className="bg-text">Come code with us.</h1>
         </div>

@@ -1,21 +1,23 @@
-import React from "react";
-import "./Home.css";
+import React, { Component } from "react";
 import AnimateBar from "./AnimateBar/AnimateBar";
 import Header from "./Header/Header";
-import Content from "./Content/Content";
 import BGImage from "./BGImage/BGImage";
+import MainCCC from "./MainCCC/MainCCC";
 import Footer from "./Footer/Footer";
+import "./Home.css";
 
-const Home = () => {
-  return (
-    <React.Fragment>
-      <AnimateBar />
-      <Header />
-      <BGImage />
-      <Content />
-      <Footer />
-    </React.Fragment>
-  );
-};
+export class Home extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        <AnimateBar />
+        <Header />
+        <BGImage />
+        <MainCCC />
+        <Footer />
+      </React.Fragment>
+    );
+  }
+}
 
 export default Home;
