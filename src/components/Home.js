@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import AnimateBar from "./AnimateBar/AnimateBar";
 import Header from "./Header/Header";
-import BGImage from "./BGImage/BGImage";
 import MainCCC from "./MainCCC/MainCCC";
 import Footer from "./Footer/Footer";
+import Banner from "./Banner/Banner";
 import "./Home.css";
 
 export class Home extends Component {
@@ -12,9 +12,9 @@ export class Home extends Component {
       <React.Fragment>
         <AnimateBar />
         <Header />
-        <BGImage />
+        <Banner />
         <MainCCC />
-        <Footer />
+        {/* <Footer /> */}
       </React.Fragment>
     );
   }

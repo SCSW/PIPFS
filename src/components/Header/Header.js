@@ -8,24 +8,25 @@ export class Header extends Component {
     return (
       <React.Fragment>
         <div className="wrapper">
-          <center className="logo">
-            <NavLink to="/">
-              <img className="h-logo" src={Logo} alt="logo" />
-            </NavLink>
-          </center>
-          <center>
+          <div className="h-left">
+            <div className="logo">
+              <NavLink to="/">
+                <img className="h-logo" src={Logo} alt="logo" />
+              </NavLink>
+            </div>
+          </div>
+          <div className="h-center">
             <div className="n-search">
               <input
                 className="n-search-box"
                 type="search"
                 placeholder="Search"
               />
-              <div className="search-icon">
-                <i className="fas fa-search" />
-              </div>
+              <i className="fas fa-search" />
             </div>
-          </center>
-          <div className="h-menu">
+          </div>
+
+          <div className="h-left">
             <div className="menu">
               <NavLink to="/" className="menu-item">
                 home
@@ -42,12 +43,6 @@ export class Header extends Component {
               <NavLink to="/Register" className="menu-item1">
                 sign up
               </NavLink>
-              <NavLink to="/Profile" className="menu-item2">
-                Profile
-              </NavLink>
-            </div>
-            <div className="h-ham">
-              <i className="fas fa-bars" />
             </div>
           </div>
         </div>

@@ -1,225 +1,101 @@
 .wrapper {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 33.33%);
-  background-color: #151618;
-  text-transform: uppercase;
-  cursor: pointer;
-  grid-template-rows: minmax(3rem, auto);
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 70px;
 }
-
+.h-left {
+  width: 100%;
+  height: 70;
+}
+.logo {
+  height: 70px;
+  text-align: center;
+}
 .h-logo {
-  height: 65px;
-  width: 65px;
-}
-.logo:active {
-  transform: scale(0.98);
+  cursor: pointer;
+  height: 70px;
 }
 
+.h-center {
+  width: 100%;
+  height: 70px;
+}
 .n-search {
-  font-size: 20px;
-  padding: 10px;
-  margin: 8px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr 1rem);
+  width: 100%;
+  height: 70px;
 }
 .n-search-box {
-  padding: 8px;
-  height: auto;
-  width: 25rem;
+  width: 90%;
   border-radius: 5px;
+  margin: 15px;
   border: none;
+  height: 35px;
+  padding: 5px;
+  color: #333333;
 }
-.search-icon {
+.fa-search {
   color: #fff;
-  padding: 1px 5px;
+  cursor: pointer;
+  font-size: 18px;
 }
-.search-icon:active {
+.fa-search:active {
   transform: scale(0.95);
 }
-.search-icon:focus {
-  outline: none;
-}
 
-.h-ham {
-  color: #fff;
-  display: none;
+.h-left {
+  width: 100%;
+  height: 70px;
 }
-.fa-bars:active {
-  transform: scale(0.95);
-}
-.fa-bars:focus {
-  outline: none;
-}
-
 .menu {
-  padding: 10px;
-  margin: 12px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-.menu-item2 {
-  display: none;
-}
-.menu-item1 {
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  color: #fff;
+  margin: 17px;
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
   text-transform: uppercase;
-  transition: 0.3s;
-  font-weight: bold;
 }
 .menu-item {
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
   color: #fff;
-  text-transform: uppercase;
-  transition: 0.3s;
+  padding: 5px 8px;
   font-weight: bold;
+  text-decoration: none;
+}
+.menu-item1 {
+  color: #fff;
+  padding: 5px 8px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .menu-item:hover {
-  color: rgb(57, 185, 168);
-  background-color: #232324;
+  color: rgb(45, 117, 90);
+  background-color: #777777;
   border-radius: 3px;
 }
 .menu-item1:hover {
-  color: rgb(57, 185, 168);
-  background-color: #232324;
+  color: rgb(45, 117, 90);
+  background-color: #777777;
   border-radius: 3px;
 }
 
 .hide-right-menu {
   display: none;
 }
-.h-close {
-  cursor: pointer;
-  text-align: end;
-  justify-content: end;
-  font-size: 20px;
-  color: #fff;
-}
-.fa-times:hover {
-  background-color: #232324;
-  border-radius: 3px;
-}
-.fa-times:active {
-  transform: scale(0.95);
-}
-.fa-times:focus {
-  outline: none;
-}
-.fa-times:before {
-  padding: 10px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
-.h-right-menu {
-  display: grid;
-  grid-auto-rows: 30px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  transition: 0.4s;
-  width: 0;
-  height: 100vh;
-  background-color: #151618;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
 
-@media only screen and (max-width: 1450px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-  }
-  .n-search {
-    font-size: 20px;
-    padding: 10px 0px 10px 55px;
-  }
-  .h-right-menu {
-    width: 100%;
-  }
-  .logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 40px;
-  }
-  .h-menu {
-    display: grid;
-    grid-template-rows: 1fr;
-  }
-  .menu {
-    display: none;
-  }
-  .h-ham {
-    display: block;
-    text-align: end;
-    padding: 10px;
-    margin: 10px;
-    color: #fff;
-    font-size: 20px;
-  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
 
-@media only screen and (max-width: 800px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 30% 55% 15%;
-  }
-  .n-search {
-    font-size: 20px;
-    padding: 10px 0px 10px 30px;
-  }
-  .logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 30px;
-  }
-  .n-search-box {
-    width: 17rem;
-  }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
 
-@media only screen and (max-width: 520px) {
-  .n-search-box {
-    width: 10.5rem;
-  }
-  .logo {
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-  }
-  .n-search {
-    font-size: 20px;
-    padding: 10px 0px 20px;
-  }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
-/* let Menu = () => {
-			return (
-				<div className="h-menu">
-					<div className="menu">
-						<NavLink className="menu-item" to="/">
-							Home
-						</NavLink>
-						<NavLink className="menu-item" to="/">
-							contact
-						</NavLink>
-						<NavLink className="menu-item" to="/">
-							about us
-						</NavLink>
-						<NavLink className="menu-item" to="/LogIn">
-							log in
-						</NavLink>
-					</div>
-				</div>
-			);
-		}; */
-/* constructor() {
-		super();
-		this.state = {
-			open: false
-		};
-	}
-	toggleMenu = () => {
-		this.setState({ open: !this.state.open });
-	}; */
