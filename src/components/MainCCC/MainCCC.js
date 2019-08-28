@@ -9,8 +9,8 @@ export default class MainCCC extends Component {
     return (
       <React.Fragment>
         <div className="mccc">
-          <Catergory></Catergory>
-          <Content></Content>
+          <Catergory />
+          <Content />
           <CoinMarketplace />
         </div>
       </React.Fragment>

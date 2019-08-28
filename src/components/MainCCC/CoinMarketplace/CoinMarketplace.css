@@ -1,0 +1,13 @@
+.coinmarketplace {
+  width: 100%;
+  height: 40rem;
+  margin: 10px;
+}
+.sccc-box {
+  width: 70%;
+  float: left;
+  height: inherit;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #eee;
+}

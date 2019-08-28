@@ -27,6 +27,9 @@ export class Header extends Component {
           </div>
 
           <div className="h-left">
+            <div className="h-ham">
+              <i className="fas fa-bars"></i>
+            </div>
             <div className="menu">
               <NavLink to="/" className="menu-item">
                 home

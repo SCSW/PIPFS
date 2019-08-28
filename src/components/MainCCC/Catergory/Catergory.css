@@ -1,0 +1,19 @@
+.catergory {
+  width: 100%;
+  height: 70rem;
+  margin: 10px;
+}
+.sc-box {
+  width: 50%;
+  float: right;
+  height: inherit;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #eee;
+}
+.scbt {
+  cursor: pointer;
+}
+.scbt:hover {
+  color: #1fbf8f;
+}
