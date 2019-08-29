@@ -7,7 +7,7 @@ export default class Catergory extends Component {
       <React.Fragment>
         <div className="catergory">
           <div className="sc-box">
-            <h3 className="scbt">All Tags</h3>
+            <h3 className="scbtt">All Tags</h3>
             <h5 className="scbt">Echo</h5>
             <h5 className="scbt">Echo</h5>
             <h5 className="scbt">Echo</h5>

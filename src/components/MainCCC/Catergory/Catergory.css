@@ -1,15 +1,15 @@
 .catergory {
   width: 100%;
-  height: 70rem;
-  margin: 10px;
+  height: 200vh;
+  padding-top: 10px;
 }
 .sc-box {
-  width: 50%;
   float: right;
   height: inherit;
   background-color: #fff;
   text-align: center;
-  border: 1px solid #eee;
+  /* border: 2px solid #eee; */
+  border-radius: 5px;
 }
 .scbt {
   cursor: pointer;
@@ -17,3 +17,48 @@
 .scbt:hover {
   color: #1fbf8f;
 }
+@media only screen and (max-width: 600px) {
+  .sc-box {
+    display: none;
+  }
+} /*
+@media only screen and (min-width: 600px) {
+  .sc-box {
+    width: 80%;
+    height: 70rem;
+  }
+  .scbtt {
+    font-size: 1em;
+  }
+  .scbt {
+    font-size: 0.8em;
+  }
+}/*
+@media only screen and (min-width: 992px) {
+  .sc-box {
+    width: 75%;
+    height: 80rem;
+  }
+  .scbtt {
+    font-size: 1.2em;
+  }
+  .scbt {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sc-box {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sc-box {
+    width: 50%;
+  }
+  .scbtt {
+    font-size: 1.17em;
+  }
+  .scbt {
+    font-size: 1em;
+  }
+} */
