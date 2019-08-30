@@ -29,6 +29,7 @@
   font-weight: normal;
   font-size: 16px;
   display: grid;
+  margin: 0;
 }
 .r-login {
   color: black;
