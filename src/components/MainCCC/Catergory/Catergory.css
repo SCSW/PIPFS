@@ -5,10 +5,9 @@
 .sc-box {
   float: right;
   height: inherit;
-  background-color: #fff;
   text-align: center;
-  border: 2px solid #eee;
-  border-radius: 5px;
+  border-radius: 3px;
+  background-color: #ffffff;
 }
 .scbt {
   cursor: pointer;

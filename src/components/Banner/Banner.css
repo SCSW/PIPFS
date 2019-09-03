@@ -18,6 +18,9 @@
   cursor: pointer;
   font-size: 1.8rem;
 }
+.fa-window-close:hover {
+  color: #555555;
+}
 .fa-window-close:active {
   transform: scale(0.95);
 }

@@ -1,7 +1,9 @@
 .mccc {
   width: 100%;
   height: 100vw;
-  background-color: #dddddd;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+}
+.mmccc {
+  background-color: #bbbbbb;
 }

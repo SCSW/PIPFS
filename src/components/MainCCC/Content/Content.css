@@ -6,7 +6,24 @@
 .scc-box {
   width: 100%;
   height: inherit;
-  text-align: center;
   background-color: #fff;
-  border: 1px solid #eee;
+  border-radius: 3px;
+}
+.sccb-pe {
+  width: 100%;
+  height: 70px;
+  width: calc(100 - 30px);
+  background-color: #97a0f3;
+}
+.sccbpe {
+  height: 70px;
+  background-color: rgb(129, 240, 129);
+}
+.sccbp {
+  background-color: mediumturquoise;
+}
+.sccbe {
+  height: 70px;
+  float: right;
+  /* background-color: orchid; */
 }
