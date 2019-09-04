@@ -1,29 +1,96 @@
 .content {
   width: 100%;
-  height: 40rem;
+  height: 0;
   padding: 10px;
 }
 .scc-box {
   width: 100%;
-  height: inherit;
+  height: 600px;
   background-color: #fff;
   border-radius: 3px;
 }
 .sccb-pe {
   width: 100%;
-  height: 70px;
-  width: calc(100 - 30px);
-  background-color: #97a0f3;
+  height: 85px;
+  padding: 10px;
 }
-.sccbpe {
-  height: 70px;
-  background-color: rgb(129, 240, 129);
+.sccb1 {
+  display: grid;
+  grid-template-columns: 90px 150px;
 }
+
 .sccbp {
-  background-color: mediumturquoise;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  cursor: pointer;
+  margin: 2px 13px;
+  border-radius: 50%;
+  background-color: #333333;
+}
+.sccbp1 {
+  margin: 0;
+  width: 150px;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+.sccbp2::first-letter {
+  letter-spacing: 3px;
+}
+.sccbp2 {
+  margin: 0;
+  width: 150px;
+  color: #555555;
+  font-size: 10px;
+  margin: 10px 0px;
 }
 .sccbe {
-  height: 70px;
   float: right;
-  /* background-color: orchid; */
+  color: #333333;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.sccb-image {
+  width: 100%;
+  height: 300px;
+  background-image: url(./block.gif);
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0.8;
+}
+.fa-exclamation-circle {
+  width: 0 !important;
+  bottom: 100%;
+}
+.sccb-content {
+  width: 100%;
+  height: 148px;
+  padding: 10px;
+  text-indent: 50px;
+  text-align: justify;
+  overflow: hidden;
+}
+.sccb-lcps {
+  width: 100%;
+  height: 67px;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+}
+.fa-heart {
+  width: 20%;
+}
+.fa-comment-alt {
+  width: 20%;
+}
+.fa-arrow-up {
+  width: 20%;
+}
+.fa-arrow-down {
+  width: 20%;
+}
+.fa-share {
+  width: 20%;
 }

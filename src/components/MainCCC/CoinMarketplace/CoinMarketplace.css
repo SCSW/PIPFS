@@ -14,7 +14,9 @@
   margin: 0;
   color: #fff;
   line-height: 50px;
-  background-color: #555555;
+  border-radius: 3px 3px 0px 0px;
+  border-bottom: none;
+  background-color: #2c2727;
 }
 .sccc-graph {
   line-height: 30px;
@@ -23,7 +25,9 @@
   border: 1px solid #eee;
 }
 .coin-title {
-  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
   font-weight: bold;
   border-bottom: 1px solid #eee;
 }

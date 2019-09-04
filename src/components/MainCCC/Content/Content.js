@@ -7,11 +7,42 @@ const Content = () => {
       <div className="content">
         <div className="scc-box">
           <div className="sccb-pe">
-            <div className="sccbpe">
-              <div className="sccbe">Hello</div>
-              <div className="sccbp">hello</div>
+            <div className="sccbe">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div className="sccb1">
+              <div className="sccbp" />
+              <div className="sccbpn">
+                <h5 className="sccbp1">User name</h5>
+                <h5 className="sccbp2">2years</h5>
+              </div>
             </div>
           </div>
+          <div className="sccb-image">
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <div className="sccb-content">
+            hiBesides the characteristics of every contract type – individual
+            contents, contract partners, terms languages and provisions or
+            conditions, contract and approval processing requirements – there
+            are additional specific aspects for different contract types.
+            Combionic’s vision and strategy is targeting a wide range of
+            industries, use cases and domain-specific requirements with a great
+            set of adaptable capabilities in content-, workflow-, analytics-,
+            reporting-, and risk life cycle management. SMARTCONTRACT provides
+            capabilities to support these specific needs very flexible. Our
+            technology made it also easy to configure or customize the solution
+            with custom specific features.
+          </div>
+          <center>
+            <div className="sccb-lcps">
+              <i class="far fa-heart"></i>
+              <i class="far fa-comment-alt"></i>
+              <i class="fas fa-arrow-up">0.99%</i>
+              <i class="fas fa-arrow-down">8.88%</i>
+              <i class="fas fa-share"></i>
+            </div>
+          </center>
         </div>
       </div>
     </React.Fragment>

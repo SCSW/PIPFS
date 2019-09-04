@@ -9,6 +9,13 @@
   border-radius: 3px;
   background-color: #ffffff;
 }
+.scbtt {
+  margin: 0;
+  color: #fff;
+  line-height: 50px;
+  border-radius: 3px 3px 0px 0px;
+  background-color: #2c2727;
+}
 .scbt {
   cursor: pointer;
 }
