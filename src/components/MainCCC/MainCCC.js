@@ -10,7 +10,6 @@ export default class MainCCC extends Component {
     return (
       <React.Fragment>
         <div className="mmccc">
-          {/* <MMenu /> */}
           <div className="mccc">
             <Catergory />
             <Content />

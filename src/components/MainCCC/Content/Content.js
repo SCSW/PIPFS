@@ -38,8 +38,14 @@ const Content = () => {
             <div className="sccb-lcps">
               <i class="far fa-heart"></i>
               <i class="far fa-comment-alt"></i>
-              <i class="fas fa-arrow-up">0.99%</i>
-              <i class="fas fa-arrow-down">8.88%</i>
+              <div className="sccbpb-u">
+                <h6 className="sccbpu">0.99 %</h6>
+                <i class="fas fa-arrow-up"></i>
+              </div>
+              <div className="sccbpb-d">
+                <h6 className="sccbpd">99.99 %</h6>
+                <i class="fas fa-arrow-down"></i>
+              </div>
               <i class="fas fa-share"></i>
             </div>
           </center>

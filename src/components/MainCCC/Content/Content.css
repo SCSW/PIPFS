@@ -54,19 +54,25 @@
 .sccb-image {
   width: 100%;
   height: 300px;
+  cursor: pointer;
   background-image: url(./block.gif);
   background-repeat: no-repeat;
   background-position: top;
-  opacity: 0.8;
+  filter: opacity(60%);
 }
 .fa-exclamation-circle {
-  width: 0 !important;
-  bottom: 100%;
+  color: black;
+  margin: 10px;
+  float: right;
+}
+.fa-exclamation-circle:hover {
+  color: white;
 }
 .sccb-content {
   width: 100%;
   height: 148px;
   padding: 10px;
+  cursor: pointer;
   text-indent: 50px;
   text-align: justify;
   overflow: hidden;
@@ -74,7 +80,7 @@
 .sccb-lcps {
   width: 100%;
   height: 67px;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   padding: 10px;
   display: inline-block;
@@ -85,12 +91,79 @@
 .fa-comment-alt {
   width: 20%;
 }
+.sccbpb-u {
+  width: calc(20% - 20px);
+  display: inline-block;
+
+  font-size: 20px;
+  color: green;
+}
 .fa-arrow-up {
   width: 20%;
+  padding: 1px;
+  float: right;
+}
+.sccbpu {
+  float: right;
+  width: 40%;
+  margin: 0;
+  font-size: 15px;
+}
+.sccbpb-d {
+  width: calc(20% - 20px);
+  display: inline-block;
+  font-size: 20px;
+  color: red;
 }
 .fa-arrow-down {
   width: 20%;
+  padding: 1px;
+  float: right;
 }
+.sccbpd {
+  margin: 0;
+  width: 40%;
+  float: right;
+  font-size: 15px;
+}
+
 .fa-share {
   width: 20%;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .sccc-box {
+    display: none;
+  }
+  .scccbt {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .sccc-box {
+    display: block;
+    width: 80%;
+  }
+  .scccbt {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sccc-box {
+    width: 75%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .sccc-box {
+    width: 70%;
+  }
+  .scccbt {
+    font-size: 1.2em;
+  }
 }

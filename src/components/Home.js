@@ -12,9 +12,8 @@ export class Home extends Component {
       <React.Fragment>
         <AnimateBar />
         <Header />
-        <Banner />
+        {/* <Banner /> */}
         <MainCCC />
-        {/* <Footer /> */}
       </React.Fragment>
     );
   }
